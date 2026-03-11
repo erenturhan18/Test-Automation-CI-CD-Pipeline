@@ -1,10 +1,10 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class BasitTest {
+public class SmokeTest {
 
     @Test
-    public void toplamaTesti() {
+    public void pipelineHealthCheck() {
         System.out.println("--- GitHub Actions Testi Basliyor ---");
         int sonuc = 2 + 2;
         Assert.assertEquals(sonuc, 4);

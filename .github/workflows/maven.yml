@@ -1,4 +1,4 @@
-name: Basit Test Akisi
+name: Smoke Test & Deployment Validation
 
 on:
   push:
@@ -16,5 +16,5 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
-      - name: Sadece Basit Testi Kos
-        run: mvn test -Dtest=BasitTest
+      - name: Smoke Test & Deployment Validation
+        run: mvn test -Dbrowser=chrome-headless
