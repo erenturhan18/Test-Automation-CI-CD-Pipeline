@@ -19,7 +19,8 @@ public class AmazonSearchTest {
         aramaKutusu.sendKeys("Nutella" + Keys.ENTER);
         System.out.println("Arama yapildi: Nutella");
 
-        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("Nutella"));
+        WebElement hedefElement = Driver.getDriver().findElement(By.xpath("//*[@id=\"p_123/246889\"]/span/a/span"));
+        Assert.assertTrue(hedefElement.isDisplayed(), "HATA: Aranan spesifik filtre/element sayfada gorunmuyor!");
 
         System.out.println("Test Basarili: Sonuc yazisinda Nutella goruldu.");
         Driver.closeDriver();
