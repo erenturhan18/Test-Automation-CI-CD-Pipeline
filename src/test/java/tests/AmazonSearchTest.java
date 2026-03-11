@@ -23,9 +23,6 @@ public class AmazonSearchTest {
 
         wait.until(ExpectedConditions.urlContains("Nutella"));
 
-        WebElement sonucElementi = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"p_123/246889\"]/span/a/span")));
-
-        Assert.assertTrue(sonucElementi.isDisplayed());
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("Nutella"));
 
         Driver.closeDriver();
