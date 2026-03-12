@@ -16,7 +16,7 @@ Bu proje, yazılım test süreçlerini otomatiğe bağlayarak **Sürekli Test (C
 - **Dynamic Configuration:** Farklı ortamlar ve tarayıcılar için esnek yapılandırma desteği.
 
 ## 🛠️ Teknik Yığın (Tech Stack)
-- **Language:** Java 17
+- **Language:** Java 11
 - **Automation:** Selenium WebDriver
 - **Test Runner:** TestNG
 - **Build Tool:** Maven
@@ -24,7 +24,7 @@ Bu proje, yazılım test süreçlerini otomatiğe bağlayarak **Sürekli Test (C
 
 ## 🏗️ CI/CD İş Akışı (Workflow)
 Proje, GitHub Actions üzerinde tanımlanan şu adımları takip eder:
-1. **Environment Setup:** Java JDK 17 kurulumu ve ortam değişkenlerinin ayarlanması.
+1. **Environment Setup:** Java JDK 11 kurulumu ve ortam değişkenlerinin ayarlanması.
 2. **Dependency Management:** Maven üzerinden gerekli tüm kütüphanelerin (Selenium, TestNG vb.) indirilmesi.
 3. **Headless Configuration:** Testlerin sunucu tarafında sorunsuz çalışması için `--headless`, `--no-sandbox` ve `--disable-dev-shm-usage` argümanlarının kullanımı.
 4. **Test Execution:** `mvn test` komutu ile tüm test suitlerinin koşturulması.
